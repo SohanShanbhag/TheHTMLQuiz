@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body style="background-color: palegoldenrod;">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center"><b><u>Quiz Time!</u></b></h1>
+        <hr style="height:1%; background-color:black">
+
+        
+        <b><p id="Score" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Score: <span id="scoredisp">0</span></p></b>
+        <div class="wrapper">
+            <div id="q1">
+                
+                <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 1</h2>
+                <h3 style="text-align: center;">With what tag do we call JavaScript commands in an HTML file?</h3>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="jQuery1" class="radioClass"  value="jQuery"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">'jQuery' tag</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="Script1" class="radioClass"  value="Script"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">'Script' tag</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="HTMSRC1" class="radioClass"  value="HTMSRC"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">'HTM' SRC tag</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal1(); goToQ(1, 2)">Next</button>
+            </div>
+
+            <div id="q2" style="display: none;">
+                <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 2</h2>
+                <h3 style="text-align: center;">What is the correct HTML for adding a background color?</h3>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1" required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;body style="color: yellow"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">body style="color: yellow"</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;body style="bg-color: yellow"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="correct1" class="radioClass"  value="correct1"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;body style="background-color: yellow"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal2(); goToQ(2, 3)">Next</button></span>
+            </div>
+
+            <div id="q3" style="display: none;">
+                <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 3</h2>
+                <h3 style="text-align: center;">How do we open a link in a new tab?</h3>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong2" class="radioClass"  value="wrong2" required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;a href="url" target="new"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong2" class="radioClass"  value="wrong2"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;a href="url" target=_blank&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="correct2" class="radioClass"  value="correct2"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;a href="url" target="_blank"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal3(); goToQ(3, 4)">Next</button></span>
+            </div>
+
+
+            <div id="q4" style="display: none;">
+                <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 4</h2>
+                <h3 style="text-align: center;">Which among the following is the correct way in HTML to insert an image?</h3>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="correct3" class="radioClass"  value="correct3" required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;img src="url" alt="The image"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong3" class="radioClass"  value="wrong3"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;img url="url" alt="The image"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong3" class="radioClass"  value="wrong3"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;image src="url" alt="The image"&gt;&lt;/image></label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal4(); goToQ(4, 5)">Next</button></span>
+            </div>
+
+            <div id="q5" style="display: none;">
+                <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 5</h2>
+                <h3 style="text-align: center;">Which tag is used for creating a drop-down selection list?
+                </h3>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong4" class="radioClass"  value="correct3" required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;dropdown&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="correct4" class="radioClass"  value="wrong3"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;select&gt;</label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" id="wrong4" class="radioClass"  value="wrong3"required>
+                <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;list"&gt;</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal5(); goToResults()">Next</button></span>
+            </div>
+
+            <div id="resultsPage" style="display:none">
+                <h1 style="text-align: center;">Great, you have completed the quiz!</h1>
+                <br>
+                <br>
+                <button type="submit" class="button" style="margin-left:40%" onclick="location.reload()">Restart Quiz? Press me!</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var que1 = document.getElementById("q1")
+        var score = 0;
+
+        var que2 = parseInt(document.getElementById("q2"));
+        
+        function getVal1(){
+            if(document.getElementById('Script1').checked === true){
+                score = score+1;
+            }
+            else{
+            }
+            document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getVal2(){
+            if(document.getElementById('correct1').checked === true){
+                score = score+1;
+            }
+            document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getVal3(){
+            if(document.getElementById('correct2').checked === true){
+                score = score+1;
+            }
+            document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getVal4(){
+            if(document.getElementById('correct3').checked === true){
+                score = score+1;
+            }
+            document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getVal5(){
+            if(document.getElementById('correct4').checked === true){
+                score = score+1;
+            }
+            document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function goToQ(oldQNo, newQNo){
+            oldQ = "q"+oldQNo
+            newQ = "q" + newQNo
+
+            var hide1 = document.getElementById(oldQ);
+            hide1.style.display = "none";
+
+            var show1 = document.getElementById(newQ);
+            show1.style.display = "block";
+        }
+
+        function goToResults(){
+            document.getElementById("resultsPage").style.display = "block"
+            document.getElementById("q5").style.display = "none"
+
+            document.getElementById("Score").style.fontSize = "50px"
+            document.getElementById("Score").style.textAlign = "center"
+        }
+    </script>
+</html>
