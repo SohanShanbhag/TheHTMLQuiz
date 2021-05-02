@@ -40,7 +40,11 @@
                 <br>
                 <br>
                 <br>
-                <button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal1(); goToQ(1, 2)">Next</button>
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal1(); getResult1()" id="next1">Next</button>
+            </div>
+
+            <div id="q11" style=" display:none">
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="goToQ(11, 2); myFunc1()" id="q11B">Next</button>
             </div>
 
             <div id="q2" style="display: none;">
@@ -49,17 +53,17 @@
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1" required>
+                <input type="radio" name="radio" id="wrong10" class="radioClass"  value="wrong1" required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;body style="color: yellow"&gt;</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1"required>
+                <input type="radio" name="radio" id="wrong11" class="radioClass"  value="wrong1"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">body style="color: yellow"</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong1" class="radioClass"  value="wrong1"required>
+                <input type="radio" name="radio" id="wrong12" class="radioClass"  value="wrong1"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;body style="bg-color: yellow"&gt;</label>
                 <br>
                 <br>
@@ -70,7 +74,11 @@
                 <br>
                 <br>
                 <br>
-                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal2(); goToQ(2, 3)">Next</button></span>
+                <span><button id="next2" class="button" style="margin-left: 1400px;" type="submit" onclick="getVal2(); getResult2()">Next</button></span>
+            </div>
+
+            <div id="q12" style="display:none">
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="goToQ(12, 3); myFunc2()" id="q12B">Next</button>
             </div>
 
             <div id="q3" style="display: none;">
@@ -79,12 +87,12 @@
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong2" class="radioClass"  value="wrong2" required>
+                <input type="radio" name="radio" id="wrong20" class="radioClass"  value="wrong2" required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;a href="url" target="new"&gt;</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong2" class="radioClass"  value="wrong2"required>
+                <input type="radio" name="radio" id="wrong21" class="radioClass"  value="wrong2"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;a href="url" target=_blank&gt;</label>
                 <br>
                 <br>
@@ -99,9 +107,12 @@
                 <br>
                 <br>
                 <br>
-                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal3(); goToQ(3, 4)">Next</button></span>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal3(); getResult3()" id="next3">Next</button></span>
             </div>
 
+            <div id="q13" style="display:none">
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="goToQ(13, 4); myFunc3()" id="q13B">Next</button>
+            </div>
 
             <div id="q4" style="display: none;">
                 <h2 id="Q" style="font-family: Arial, Helvetica, sans-serif;">Question 4</h2>
@@ -114,12 +125,12 @@
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong3" class="radioClass"  value="wrong3"required>
+                <input type="radio" name="radio" id="wrong30" class="radioClass"  value="wrong3"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;img url="url" alt="The image"&gt;</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong3" class="radioClass"  value="wrong3"required>
+                <input type="radio" name="radio" id="wrong31" class="radioClass"  value="wrong3"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;image src="url" alt="The image"&gt;&lt;/image></label>
                 <br>
                 <br>
@@ -129,7 +140,11 @@
                 <br>
                 <br>
                 <br>
-                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal4(); goToQ(4, 5)">Next</button></span>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal4(); getResult4()" id="next4">Next</button></span>
+            </div>
+
+            <div id="q14" style="display:none">
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="goToQ(14, 5); myFunc4()" id="q14B">Next</button>
             </div>
 
             <div id="q5" style="display: none;">
@@ -139,17 +154,17 @@
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong4" class="radioClass"  value="correct3" required>
+                <input type="radio" name="radio" id="wrong40" class="radioClass"  value="wrong3" required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;dropdown&gt;</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="correct4" class="radioClass"  value="wrong3"required>
+                <input type="radio" name="radio" id="correct4" class="radioClass"  value="correct3"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;select&gt;</label>
                 <br>
                 <br>
                 <br>
-                <input type="radio" name="radio" id="wrong4" class="radioClass"  value="wrong3"required>
+                <input type="radio" name="radio" id="wrong41" class="radioClass"  value="wrong3"required>
                 <label for="radio1" style="font-family: verdana; font-size:x-large">&lt;list"&gt;</label>
                 <br>
                 <br>
@@ -159,7 +174,11 @@
                 <br>
                 <br>
                 <br>
-                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal5(); goToResults()">Next</button></span>
+                <span><button class="button" style="margin-left: 1400px;" type="submit" onclick="getVal5(); getResult5()" id="next5">Next</button></span>
+            </div>
+
+            <div id="q15" style="display:none">
+                <button class="button" style="margin-left: 1400px;" type="submit" onclick="goToResults(); myFunc5()" id="q15B">Next</button>
             </div>
 
             <div id="resultsPage" style="display:none">
@@ -186,11 +205,60 @@
             document.getElementById("scoredisp").innerHTML=score;
         }
 
+        function getResult1(){
+            if(document.getElementById('Script1').checked === true){
+                document.body.style.backgroundColor = "lightgreen"
+                
+            }
+
+            else{
+                document.body.style.backgroundColor="red"
+            }
+
+            document.getElementById('jQuery1').disabled=true   
+            document.getElementById('Script1').disabled=true 
+            document.getElementById('HTMSRC1').disabled=true   
+            document.getElementById('next1').disabled = true 
+            document.getElementById('next1').style.display = "none"
+            document.getElementById('q11').style.display = "block"
+            
+        }
+
+        function myFunc1(){
+            document.getElementById('q1').style.display = "none"
+        }
+
+
         function getVal2(){
             if(document.getElementById('correct1').checked === true){
                 score = score+1;
             }
             document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getResult2(){
+            if(document.getElementById('correct1').checked === true){
+                document.body.style.backgroundColor = "lightgreen"
+                
+            }
+
+            else{
+                document.body.style.backgroundColor="red"
+            }
+
+            document.getElementById('wrong10').disabled=true   
+            document.getElementById('correct1').disabled=true 
+            document.getElementById('wrong11').disabled=true   
+            document.getElementById('wrong12').disabled=true 
+            document.getElementById('next2').disabled = true 
+            document.getElementById('next2').style.display = "none"
+            document.getElementById('q12').style.display = "block"
+            document.getElementById('wrong1').disabled=true 
+            
+        }
+
+        function myFunc2(){
+            document.getElementById('q2').style.display = "none"
         }
 
         function getVal3(){
@@ -200,6 +268,28 @@
             document.getElementById("scoredisp").innerHTML=score;
         }
 
+        function getResult3(){
+            if(document.getElementById('correct2').checked === true){
+                document.body.style.backgroundColor = "lightgreen"
+                
+            }
+
+            else{
+                document.body.style.backgroundColor="red"
+            }
+
+            document.getElementById('wrong20').disabled=true   
+            document.getElementById('correct2').disabled=true 
+            document.getElementById('wrong21').disabled=true 
+            document.getElementById('next3').disabled = true
+            document.getElementById('next3').style.display = "none"
+            document.getElementById('q13').style.display = "block"            
+        }
+
+        function myFunc3(){
+            document.getElementById('q3').style.display = "none"
+        }
+
         function getVal4(){
             if(document.getElementById('correct3').checked === true){
                 score = score+1;
@@ -207,11 +297,57 @@
             document.getElementById("scoredisp").innerHTML=score;
         }
 
+        function getResult4(){
+            if(document.getElementById('correct3').checked === true){
+                document.body.style.backgroundColor = "lightgreen"
+                
+            }
+
+            else{
+                document.body.style.backgroundColor="red"
+            }
+
+            document.getElementById('wrong30').disabled=true   
+            document.getElementById('correct3').disabled=true 
+            document.getElementById('wrong31').disabled=true 
+            document.getElementById('next4').disabled = true 
+            document.getElementById('next4').style.display = "none"
+            document.getElementById('q14').style.display = "block"
+            
+        }
+
+        function myFunc4(){
+            document.getElementById('q4').style.display = "none"
+        }
+
         function getVal5(){
             if(document.getElementById('correct4').checked === true){
                 score = score+1;
             }
             document.getElementById("scoredisp").innerHTML=score;
+        }
+
+        function getResult5(){
+            if(document.getElementById('correct4').checked === true){
+                document.body.style.backgroundColor = "lightgreen"
+                
+            }
+
+            else{
+                document.body.style.backgroundColor="red"
+            }
+
+            document.getElementById('wrong40').disabled=true   
+            document.getElementById('correct4').disabled=true 
+            document.getElementById('wrong41').disabled=true 
+            document.getElementById('next5').disabled = true 
+            document.getElementById('next5').style.display = "none"
+            document.getElementById('q15').style.display = "block"
+            
+        }
+
+        function myFunc5(){
+            document.getElementById('q5').style.display = "none"
         }
 
         function goToQ(oldQNo, newQNo){
@@ -223,6 +359,8 @@
 
             var show1 = document.getElementById(newQ);
             show1.style.display = "block";
+
+            document.body.style.backgroundColor="palegoldenrod"
         }
 
         function goToResults(){
